@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App By D2</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- LEFT -->
+    <div class="left">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city" />
+        <select id="unitSelect">
+          <option value="metric">°C</option>
+          <option value="imperial">°F</option>
+        </select>
+        <button id="searchBtn" type="button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <div class="weather-info">
+        <div id="weatherIcon" class="icon"></div>
+        <h2 id="temp">--</h2>
+        <h3 id="desc">--</h3>
+        <hr />
+        <p id="location">--</p>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+      <h2>Today's Highlights</h2>
+
+      <div class="highlights">
+        <div class="card">
+          <i class="fa-solid fa-water"></i>
+          <h3>Humidity</h3>
+          <p id="humidity">--%</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-wind"></i>
+          <h3>Wind Speed</h3>
+          <p id="wind">--</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-sun"></i>
+          <h3>Sunrise</h3>
+          <p id="sunrise">--:--</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-cloud-sun"></i>
+          <h3>Sunset</h3>
+          <p id="sunset">--:--</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Clouds</h3>
+          <p id="clouds">--%</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-gauge-high"></i>
+          <h3>Pressure</h3>
+          <p id="pressure">-- hPa</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

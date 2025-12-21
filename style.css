@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f9fb;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1;
+  background-color: #78c7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 90%;
+  max-width: 480px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+
+.search-box select,
+.search-box button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+.weather-info {
+  text-align: center;
+  color: #222;
+}
+
+.weather-info hr {
+  width: 80%;
+  margin: 20px auto;
+  border: 0.5px solid #222;
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 1.5;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.right h2 {
+  margin-bottom: 20px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #78c7ff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 600;
+}
